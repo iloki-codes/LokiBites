@@ -1,0 +1,99 @@
+/* ......................footer................................... */
+
+div.footer{
+    min-height: 368px;
+    width: 100%;
+    background: #000;
+}
+
+div.social .bite{
+    position: relative;
+    top: 4vw;
+    left: 5vw;
+    font-size: 40px;
+    color: #e72929;
+    font-weight: 900;
+   
+}
+
+span.eighteen{
+    display: flex;
+    position: relative;
+    top: 8vw;
+    left: 5vw;
+    font-size: 15px;
+    color: yellow;
+    font-family: 'arial';
+}
+
+ul.smedia{
+    position: relative;
+    top: 8vw;
+    left: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+ul.smedia a{
+    margin: 10px;
+}
+
+div.flexlast{
+    position: relative;
+    top: -10vw;
+    left: 25vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    gap: 50px;
+    font-family: 'sans-serif';
+}
+
+ul.articles li, ul.leagues li, ul.team li,ul.touch li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+ul.articles li a, ul.leagues li a, ul.team li a,ul.touch li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.articles a.art, .leagues a.lea, .team a.tea, .touch a.get{
+    color: #e72929;
+    font-size: 20px;
+}
+
+/* ............................Responsiveness............................... */
+
+ul.articles li a:hover, ul.leagues li a:hover, ul.team li a:hover,ul.touch li a:hover{
+    color: #ee5e32e7;
+    transform: scale(1.2);
+    transition: 0.5s;
+    text-align:start;
+}
+
+@media screen and (max-width: 768px) {
+    div.footer ul.smedia{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    div.flexlast{
+        flex-direction: column;
+        position: relative;
+        top: -10rem;
+        left: 10rem;
+    }
+}
+/* 
+@media screen and (max-width: 320px) {
+    div.footer{
+        min-height: 368px;
+    }
+} */
