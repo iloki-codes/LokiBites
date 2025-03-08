@@ -43,6 +43,7 @@ async function seedUsers() {
 
 async function seedFoods() {
 
+    try {
   await FoodModel.deleteMany({});
   await FoodModel.insertMany(sample_foods);
   
@@ -58,4 +59,8 @@ async function seedFoods() {
   }
 
   console.log('Foods seed Is Done!');
+
+    } catch(error) {
+      console.error(error.message);
+  }
 }
