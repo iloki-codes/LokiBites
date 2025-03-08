@@ -25,10 +25,10 @@ app.use(
   })
 );
 
-app.use('/api/foods', foodRouter);
-app.use('/api/users', userRouter);
-app.use('/api/orders', orderRouter);
-app.use('/api/upload', uploadRouter);
+app.use('/v1/foods', foodRouter);
+app.use('/v1/users', userRouter);
+app.use('/v1/orders', orderRouter);
+app.use('/v1/upload', uploadRouter);
 
 const publicFolder = path.join(__dirname, './build');
 app.use(express.static(publicFolder));
