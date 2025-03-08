@@ -11,7 +11,11 @@ set('strictQuery', true);
 
 export const dbconnect = async () => {
 
-    connect(process.env.MONGODB_URL)
+    connect(process.env.MONGODB_URL, {
+        useNewUrlParser:true,
+        useUnifiedTopology:true,
+        serverSelectionTimeoutMS:50000
+    })
     .then((c) => console.log("DB Connected succesfully"))
     .catch((e) => console.log(e));
 
