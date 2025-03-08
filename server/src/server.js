@@ -20,7 +20,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://food-delivery-platform-bites.netlify.app/api", "http://localhost:3000/api"],
+    origin: ["https://food-delivery-platform-bites.netlify.app/api", "http://localhost:3000/api", "https://lokibites.onrender.com/api"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"]
   })
