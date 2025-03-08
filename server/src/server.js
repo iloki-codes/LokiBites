@@ -34,7 +34,10 @@ const publicFolder = path.join(__dirname, '../../client/public');
 app.use(express.static(publicFolder));
 
 app.get("/", (req, res) => {
-    res.send("Api req working with /api/v1");
+    res.send({
+      activeStatus: true,
+      error: false
+    });
 });
 
 app.get('*', (req, res) => {
