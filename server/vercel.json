@@ -10,11 +10,5 @@
             "src": "/api/(.*)",
             "dest": "/server.js"
         }
-    ],
-    "rewrites": [
-        {
-            "src": "/api(.*)",
-            "dest": "/api/server.js"
-        }
     ]
 }
