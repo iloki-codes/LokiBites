@@ -23,7 +23,8 @@ export const dbconnect = async () => {
 };
 
 async function seedUsers() {
-  const usersCount = await UserModel.countDocuments();
+ try {
+    const usersCount = await UserModel.countDocuments();
   if (usersCount > 0) {
     console.log('Users seed is already done!');
     return;
@@ -35,6 +36,9 @@ async function seedUsers() {
   }
 
   console.log('Users seed is done!');
+  } catch(error) {
+      console.error(error.message);
+  }
 }
 
 async function seedFoods() {
