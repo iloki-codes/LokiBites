@@ -6,6 +6,7 @@ import foodRouter from './routers/food.router.js';
 import userRouter from './routers/user.router.js';
 import orderRouter from './routers/order.router.js';
 import uploadRouter from './routers/upload.router.js';
+import mongoose from 'mongoose';
 
 import { dbconnect } from './config/database.config.js';
 import path, { dirname } from 'path';
@@ -45,6 +46,16 @@ app.get('*', (req, res) => {
   const indexFilePath = path.join(publicFolder, 'index.html');
   res.sendFile(indexFilePath);
 });
+
+app.get("/check-db", async (req, res) => {
+  try {
+    await mongoose.connection.db.admin().ping();
+    res.send("MongoDB is connected!");
+  } catch (error) {
+    res.status(500).send("MongoDB connection failed: " + error.message);
+  }
+});
+
 
 const PORT = process.env.PORT || 5000;
 
