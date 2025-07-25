@@ -2,18 +2,22 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .container a {
     background: none;
     padding: 0.3rem 1rem;
     margin: 0.2rem 0.15rem;
     font-weight: 800;
-    color: #ff0707;
+    color: #358597;
+    border: #000000;
+    text-shadow: 2px 1px 5px #000000;
   }
 
   .link:hover{
     cursor: pointer;
     border-radius: 1rem;
-    box-shadow: 0 0px 10px 5px white;
-    background-color: #000000;
+    box-shadow: 0 0px 10px 5px #F2A896;
+    background-color: #358597;
+    color: #fff;
+    text-shadow: none;
   }

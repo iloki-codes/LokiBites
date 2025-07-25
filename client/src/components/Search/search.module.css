@@ -4,7 +4,7 @@
     margin-top: 3rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .container input {
     border-radius: 10rem 0 0;
     border: none;
@@ -12,11 +12,11 @@
     width: 20rem;
     background: none;
     padding: 1.2rem;
-    color: #fff;
+    color: #F2A896;
     font-size: 1rem;
     font-weight: 500;
     outline: none;
-    border: 3px solid #e72929;
+    border: 3px solid #F2A896;
   }
 
   input::placeholder {
@@ -25,26 +25,26 @@
     font-size: 15px;
     font-family: "sans-serif";
   }
-  
+
   .container button {
     height: 3rem;
     width: 5rem;
     font-size: 1rem;
     border-radius: 0 10rem 0 0;
     border: none;
-    background-color: #e72929;
-    color: white;
+    background-color: #358597;
+    color: #F2A896;
     opacity: 0.8;
     outline: none;
   }
-  
+
   .container button:hover {
     opacity: 1;
     cursor: pointer;
-    color: #e72929;
-    background-color: #000;
+    color: #358597;
+    background-color: #F2A896;
     transform: scale(1.1);
     transition: all 0.3s;
-    border: 2px solid #e72929;
+    border: 2px solid #F2A896;
     border-left: 0;
   }

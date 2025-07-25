@@ -3,7 +3,7 @@
 div.footer{
     min-height: 368px;
     width: 100%;
-    background: #000;
+    background: #358597;
 }
 
 div.social .bite{
@@ -11,9 +11,9 @@ div.social .bite{
     top: 4vw;
     left: 5vw;
     font-size: 40px;
-    color: #e72929;
+    color: #F2A896;
     font-weight: 900;
-   
+
 }
 
 span.eighteen{
@@ -22,7 +22,7 @@ span.eighteen{
     top: 8vw;
     left: 5vw;
     font-size: 15px;
-    color: yellow;
+    color: rgb(54, 3, 115);
     font-family: 'arial';
 }
 
@@ -54,6 +54,7 @@ div.flexlast{
 ul.articles li, ul.leagues li, ul.team li,ul.touch li{
     list-style-type: none;
     margin-bottom: 15px;
+    color: #F2A896;
 }
 
 ul.articles li a, ul.leagues li a, ul.team li a,ul.touch li a{
@@ -63,10 +64,34 @@ ul.articles li a, ul.leagues li a, ul.team li a,ul.touch li a{
 }
 
 .articles a.art, .leagues a.lea, .team a.tea, .touch a.get{
-    color: #e72929;
+    color: #F2A896;
     font-size: 20px;
 }
 
+input.email {
+    background-color: gray;
+    height: 30px;
+    color: #fff;
+}
+
+ul.touch {
+
+    button {
+        margin: 2px;
+        border-radius: 20%;
+        background-color: #F2A896;
+        color: #000;
+        font-size: 15px;
+        height: 30px;
+        margin-top: 20px;
+        text-decoration: wavy;
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}
 /* ............................Responsiveness............................... */
 
 ul.articles li a:hover, ul.leagues li a:hover, ul.team li a:hover,ul.touch li a:hover{
@@ -83,7 +108,7 @@ ul.articles li a:hover, ul.leagues li a:hover, ul.team li a:hover,ul.touch li a:
 }
 
 @media screen and (max-width: 480px) {
-    
+
     div.flexlast{
         flex-direction: column;
         position: relative;
@@ -91,7 +116,7 @@ ul.articles li a:hover, ul.leagues li a:hover, ul.team li a:hover,ul.touch li a:
         left: 10rem;
     }
 }
-/* 
+/*
 @media screen and (max-width: 320px) {
     div.footer{
         min-height: 368px;

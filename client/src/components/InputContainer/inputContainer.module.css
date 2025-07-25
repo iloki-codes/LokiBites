@@ -3,21 +3,22 @@
     margin-bottom: 0.5rem;
     border-radius: 0.7rem;
     padding-top: 0.3rem;
-    border: 1px solid #e72929;
-    background-color: #000;
+    border: 1px solid #4b0082;
+    background-color: none;
 
   }
-  
+
   .label {
     display: inline-block;
     margin-left: 0.5rem;
-    color: #e72929;
+    color: #000;
     font-size: 1rem;
   }
-  
+
   .content {
     padding: 0 0.5rem;
     height: 2.7rem;
     display: flex;
     align-items: center;
+    color: #358597;
   }

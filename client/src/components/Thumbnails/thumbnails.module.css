@@ -6,7 +6,7 @@
     list-style-type: none;
     padding: 0;
   }
-  
+
   .list li a {
     height: 22.5rem;
     width: 20rem;
@@ -16,47 +16,47 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    color: #e72929;
+    color: #358597;
     font-weight: bold;
   }
-  
+
   .image {
     object-fit: cover;
     height: 14.5rem;
   }
-  
+
   .content {
     margin-top: 0.3rem;
     padding: 0.5rem 1rem;
     position: relative;
     height: 7.5rem;
-    background-color: #ffffffbb;
+    background-color: #f6c3b7;
   }
-  
+
   .favorite {
     position: absolute;
     top: 0.5rem;
     right: 1rem;
     font-size: 1.2rem;
   }
-  
+
   .favorite.not {
     color: grey;
   }
-  
+
   .stars {
     margin: 0.5rem 0;
   }
-  
+
   .product_item_footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  
+
   .outlet span {
     border-radius: 2rem;
-    background-color: #000;
+    background-color: #358597;
     display: inline-block;
     font-size: 0.8rem;
     color: #fff;
@@ -64,17 +64,17 @@
     padding: 0 0.5rem;
     margin-top: 0.2rem;
   }
-  
+
   .outlet {
     flex: 9;
   }
-  
+
   .cook_time {
     font-size: 0.9rem;
     flex: 3;
     text-align: right;
   }
-  
+
   .price {
     position: absolute;
     bottom: 0;
@@ -85,15 +85,15 @@
     font-size: 1.1rem;
   }
 
-  
+
 .btnNext {
   position: fixed;
   top: 50%;
   left: 3%;
   border-radius: 50%;
   font-size: 15px;
-  color: #e72929;
-  background-color: #000;
+  color: #fff;
+  background-color: #358597;
 }
 
 .btnPrev {
@@ -102,8 +102,8 @@
   right: 3%;
   border-radius: 50%;
   font-size: 15px;
-  color: #e72929;
-  background-color: #000;
+  color: #fff;
+  background-color: #358597;
 }
 
 .btnNext:hover, .btnPrev:hover {
