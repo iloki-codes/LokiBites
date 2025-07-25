@@ -28,7 +28,8 @@ app.use(
             "https://lokibites.onrender.com/api"
             ],
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"]
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Origin", "Authorization"],
   })
 );
 
