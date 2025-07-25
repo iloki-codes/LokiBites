@@ -3,19 +3,26 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 3rem;
+    background-color: #fff;
+    background: linear-gradient(to top, #51E1ED, #F2A896);
+    -webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 5vw;
   }
-  
+
   .details {
     width: 28rem;
   }
-  
+
   .details form {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .register {
     display: flex;
     justify-content: center;

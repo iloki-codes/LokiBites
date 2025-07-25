@@ -32,7 +32,7 @@ export default function HomePage() {
   const { foods, tags } = state;
   const { searchTerm, tag } = useParams();
 
- 
+
 
   useEffect(() => {
     getAllTags().then(tags => dispatch({ type: 'TAGS_LOADED', payload: tags }));
@@ -48,20 +48,26 @@ export default function HomePage() {
 
   return (
     <>
-      <div className={classes.container}>
-        <div className={classes.vid}>
-          <video autoPlay loop muted playsInline>
+        <div className={classes.vidContainer}>
+
+          <div className={classes.bgv}>
+
+            <video autoPlay loop muted playsInline className={classes.vid}>
             <source src={bgVid} type='video/mp4' />
           </video>
-        </div>
+            <div className={classes.overlay}></div>
+
+          </div>
+
+
         <div className={classes.main}>
           <Search />
           <Tags tags={tags} />
           {foods.length === 0 && <NotFound linkText="Reset Search" />}
           <Thumbnails foods={foods} />
+        </div>
 
         </div>
-      </div>
     </>
   );
 }

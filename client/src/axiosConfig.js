@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 axios.defaults.baseURL =
-  process.env.NODE_ENV === 'production' ? '/' : 'https://loki-bites.vercel.app/';
+  process.env.NODE_ENV === 'production' 
+    ? 'https://lokibites.onrender.com/api'
+    : 'http://localhost:5000/api';
 
 export default axios;
 
-
-// http://localhost:5000  https://loki-bites-2bu5ma2e6-ilokicodes-projects.vercel.app
+//   https://loki-bites-2bu5ma2e6-ilokicodes-projects.vercel.app

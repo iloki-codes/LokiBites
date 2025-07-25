@@ -1,42 +1,81 @@
 .container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    background: linear-gradient(to top, #F2A896, #51E1ED, #F2A896);
+    -webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+    overflow-y: visible;
   }
-  
+
   .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 35rem;
-    margin-right: 1rem;
+    flex-wrap: wrap;
+    padding: 5vw;
   }
-  
+
   .header {
     margin-bottom: 1rem;
   }
-  
+
   .header > div {
     margin-top: 1rem;
     font-size: 1.1rem;
   }
-  
+
   .header strong {
     display: inline-block;
     width: 20%;
   }
-  
+
   .payment {
     width: 100%;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 5rem;
   }
-  
+
   .payment a {
     background-color: #ff4d4d;
     color: white;
     padding: 0.8rem 5rem;
     border-radius: 1rem;
+  }
+
+  .loc {
+    overflow: visible;
+    padding: 5vw;
+  }
+
+  .logo {
+    position: fixed;
+    top: 20vw;
+    right: 10vw;
+    padding: 1vw;
+  }
+
+  .logo img {
+    width: 8vw;
+    height: 10vw;
+  }
+
+  .logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .logo span {
+    padding: 5%;
+    display: none;
+    position: relative;
+    top: 0px;
+            font-size: 1vw;
+            color: #F2A896;
+            background: #358597;
+            border: 1px dotted #F2A896;
+            border-radius: 0%;
+            font-style: italic;
+            object-fit: contain;
+  }
+
+  .logo:hover span {
+    display: block;
   }

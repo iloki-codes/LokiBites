@@ -33,7 +33,7 @@ export default function LoginPage() {
   return (
     <div className={classes.container}>
       <div className={classes.details}>
-        <Title title="Login" />
+        <Title title="Login" color={"indigo"} />
         <form onSubmit={handleSubmit(submit)} noValidate>
           <Input
             type="email"

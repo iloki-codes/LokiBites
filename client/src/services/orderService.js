@@ -18,7 +18,7 @@ export const createOrder = async (order) => {
         }
 
         const { data } = await axios.post(
-            "/api/orders/create",
+            "/orders/create",
             order,
             axiosConfig()
         );
@@ -30,7 +30,7 @@ export const createOrder = async (order) => {
 
 export const getNewOrderForCurrentUser = async () => {
     try {
-        const { data } = await axios.get("/api/orders/newOrderForCurrentUser", axiosConfig());
+        const { data } = await axios.get("/orders/newOrderForCurrentUser", axiosConfig());
         return data;
     } catch (error) {
         console.error('Fetch New Order Error:', error);
@@ -41,7 +41,7 @@ export const pay = async (paymentId) => {
     try {
     
         const { data } = await axios.put(
-            "/api/orders/pay",
+            "/orders/pay",
             { paymentId },
             axiosConfig()
         );
@@ -55,7 +55,7 @@ export const pay = async (paymentId) => {
 export const trackOrderById = async (orderId) => {
   try {
 
-      const { data } = await axios.get(`/api/orders/track/${orderId}`,
+      const { data } = await axios.get(`/orders/track/${orderId}`,
         axiosConfig()
       );
       return data;
@@ -67,7 +67,7 @@ export const trackOrderById = async (orderId) => {
 // Get All Orders (with optional state filter)
 export const getAll = async (state) => {
   try {
-      const { data } = await axios.get(`/api/orders/${state ?? ''}`,
+      const { data } = await axios.get(`/orders/${state ?? ''}`,
         {
           headers: {Authorization: `Bearer ${token}`}
         }
@@ -82,7 +82,7 @@ export const getAll = async (state) => {
 export const getAllStatus = async () => {
   try {
 
-      const { data } = await axios.get(`/api/orders/allstatus`,
+      const { data } = await axios.get(`/orders/allstatus`,
         {
           headers: {Authorization: `Bearer ${token}`}
         }
@@ -95,34 +95,34 @@ export const getAllStatus = async () => {
 
 // export const createOrder = async order => {
 //   try {
-//     const { data } = axios.post('/api/orders/create', order);
+//     const { data } = axios.post('/orders/create', order);
 //     return data;
 //   } catch (error) {}
 // };
 
 // export const getNewOrderForCurrentUser = async () => {
-//   const { data } = await axios.get('/api/orders/newOrderForCurrentUser');
+//   const { data } = await axios.get('/orders/newOrderForCurrentUser');
 //   return data;
 // };
 
 // export const pay = async paymentId => {
 //   try {
-//     const { data } = await axios.put('/api/orders/pay', { paymentId });
+//     const { data } = await axios.put('/orders/pay', { paymentId });
 //     return data;
 //   } catch (error) {}
 // };
 
 // export const trackOrderById = async orderId => {
-//   const { data } = await axios.get('/api/orders/track/' + orderId);
+//   const { data } = await axios.get('/orders/track/' + orderId);
 //   return data;
 // };
 
 // export const getAll = async state => {
-//   const { data } = await axios.get(`/api/orders/${state ?? ''}`);
+//   const { data } = await axios.get(`/orders/${state ?? ''}`);
 //   return data;
 // };
 
 // export const getAllStatus = async () => {
-//   const { data } = await axios.get(`/api/orders/allstatus`);
+//   const { data } = await axios.get(`/orders/allstatus`);
 //   return data;
 // };

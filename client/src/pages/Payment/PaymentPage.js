@@ -21,14 +21,14 @@ export default function PaymentPage() {
     <>
       <div className={classes.container}>
 
-        <div className={classes.vid}>
+        {/* <div className={classes.vid}>
                   <video autoPlay loop muted playsInline>
                     <source src={bgVid} type='video/mp4' />
                   </video>
-        </div>
+        </div> */}
 
         <div className={classes.content}>
-          <Title title="Order Details" fontSize="1.6rem" color="yellow" />
+          <Title title="Order Details" fontSize="1.6rem" color="indigo" />
           <div className={classes.summary}>
             <div>
               <h3>Name:</h3>

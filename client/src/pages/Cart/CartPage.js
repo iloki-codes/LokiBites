@@ -17,9 +17,9 @@ export default function CartPage() {
             <video autoPlay loop muted playsInline>
                 <source src={bgVid} type='video/mp4' />
             </video>
-          
+
           </div>
-      <Title title="Cart Page" margin="1.5rem 0 0 2.5rem" style={{color:"#000"}} />
+      <Title title="Cart Page" margin="1.5rem 0 0 2.5rem" color={"#358597"} />
 
       {cart.items.length === 0 ? (
         <NotFound message="Cart Page Is Empty!" />
@@ -74,17 +74,18 @@ export default function CartPage() {
               <div className={classes.foods_count}>{cart.totalCount}</div>
               <div className={classes.total_price}>
                 <Price price={cart.totalPrice} />
-                <p>Delivery Charges: 
-                  <span>{cart.totalPrice/cart.totalCount}</span>
+                <p>Delivery Charges:
+                  <span>{cart.totalPrice/10}</span>
                 </p>
                 <p>Tax:
                   <span>{cart.totalPrice * 0.18 }</span>
                 </p>
                 <p>Total Bill Amount:
                   <span>{
-                          cart.totalPrice + 
-                          cart.totalPrice/cart.totalCount + 
-                          cart.totalPrice * 0.18  
+                  Math.round(
+                          cart.totalPrice +
+                          cart.totalPrice/10 +
+                          cart.totalPrice * 0.18)
                         }
                   </span>
                 </p>

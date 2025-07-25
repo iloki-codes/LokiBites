@@ -7,10 +7,13 @@ import DateTime from '../../components/DateTime/DateTime';
 import OrderItemsList from '../../components/OrderItemsList/OrderItemsList';
 import Title from '../../components/Title/Title';
 import Map from '../../components/Map/Map';
+import loki from '../../assets/loki.png';
 
 export default function OrderTrackPage() {
   const { orderId } = useParams();
   const [order, setOrder] = useState();
+
+  const title=""
 
   useEffect(() => {
     orderId &&
@@ -55,7 +58,7 @@ export default function OrderTrackPage() {
           <OrderItemsList order={order} />
         </div>
 
-        <div>
+        <div className={classes.loc}>
           <Title title="Your Location" fontSize="1.6rem" />
           <Map location={order.addressLatLng} readonly={true} />
         </div>
@@ -65,6 +68,17 @@ export default function OrderTrackPage() {
             <Link to="/payment">Go To Payment</Link>
           </div>
         )}
+
+        <div className={classes.logo}>
+          <span>
+            Hooray! You successfully placed your order--<br />
+            we are working on your order<br />
+            & will deliver it as soon as possible.<br />
+            Thankyou for your patience.
+          </span>
+          <img src={loki} alt='loki' />
+        </div>
+
       </div>
     )
   );

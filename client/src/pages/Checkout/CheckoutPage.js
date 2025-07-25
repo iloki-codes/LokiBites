@@ -39,17 +39,17 @@ export default function CheckoutPage() {
 
   return (
     <>
-          
+
       <form onSubmit={handleSubmit(submit)} className={classes.container}>
-    
-        <div className={classes.vid}>
+
+        {/* <div className={classes.vid}>
           <video autoPlay loop muted playsInline>
             <source src={bgVid} type='video/mp4' />
           </video>
-        </div>
-        
+        </div> */}
+
         <div className={classes.content}>
-          <Title title="Order Details" fontSize="1.6rem" style={{color:"#ffff00"}} />
+          <Title title="Order Details" fontSize="1.6rem" color="indigo" />
           <div className={classes.inputs}>
             <Input
               defaultValue={user.name}
@@ -67,7 +67,7 @@ export default function CheckoutPage() {
           <OrderItemsList order={order} />
         </div>
         <div>
-          <Title title="Choose Your Location" fontSize="1.6rem" />
+          <Title title="Choose Your Location" fontSize="1.6rem" color="indigo"/>
           <Map
             location={order.addressLatLng}
             onChange={latlng => {
