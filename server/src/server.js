@@ -25,7 +25,8 @@ app.use(
             "https://food-delivery-platform-bites.netlify.app",
             "https://lokibites.netlify.app/",
             "http://localhost:3000/api",
-            "https://lokibites.onrender.com/api"
+            "https://lokibites.onrender.com/api",
+            "https://loki-bites-zfki.vercel.app/"
             ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
